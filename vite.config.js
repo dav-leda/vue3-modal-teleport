@@ -25,6 +25,7 @@ export default defineConfig(({ command }) => {
       // config para production
       // Al usar GH Pages, base debe ser el nombre del repo
       base: '/vue3-modal-teleport/',
+      build: { outDir: './docs' },
       plugins: [vue()],
       resolve: {
         alias: {
