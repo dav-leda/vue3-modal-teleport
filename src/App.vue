@@ -2,7 +2,7 @@
 <template>
   <main>
 
-    <h1>GitHub Pages CI/CD</h1>
+    <h1>GitHub Pages CI/CD w/docs output dir</h1>
 
     <button
       @click="showModal = true"
