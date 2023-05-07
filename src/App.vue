@@ -2,7 +2,7 @@
 <template>
   <main>
 
-    <h1>App.vue</h1>
+    <h1>GitHub Pages CI/CD</h1>
 
     <button
       @click="showModal = true"
