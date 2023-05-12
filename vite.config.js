@@ -4,35 +4,17 @@ import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 
 
-export default defineConfig(({ command }) => {
+export default defineConfig( ({ mode }) => {
 
-  if (command === 'serve') {
+  const dev = mode === 'development'
 
-    return {
-      // config para development
-      base: '/',
-      plugins: [vue()],
-      resolve: {
-        alias: {
-          '@': fileURLToPath(new URL('./src', import.meta.url))
-        }
-      } 
-    }
-
-  } else if (command === 'build') {
-
-    return {
-      // config para production
-      // Al usar GH Pages, base debe ser el nombre del repo
-      base: '/vue3-modal-teleport/',
-      build: { outDir: './docs' },
-      plugins: [vue()],
-      resolve: {
-        alias: {
-          '@': fileURLToPath(new URL('./src', import.meta.url))
-        }
+  return {
+    base: dev ? '/' : '/vue3-modal-teleport/',
+    plugins: [vue()],
+    resolve: {
+      alias: {
+        '@': fileURLToPath(new URL('./src', import.meta.url))
       }
     }
   }
 })
-

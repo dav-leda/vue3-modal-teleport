@@ -29,7 +29,7 @@ interface Props {
   showModal: boolean
 }
 
-const props = defineProps<Props>()
+defineProps<Props>()
 
 const emits = defineEmits(['close-modal'])
 

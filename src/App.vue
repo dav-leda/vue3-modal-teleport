@@ -2,7 +2,7 @@
 <template>
   <main>
 
-    <h1>GitHub Pages CI/CD w/docs output dir</h1>
+    <h1>Ventana Modal con Vue 3 + Vite</h1>
 
     <button
       @click="showModal = true"
@@ -44,11 +44,6 @@ import { ref } from 'vue'
 const showModal = ref<boolean>(false)
 
 const openModal = () => showModal.value = true
-
-// tsconfig.json
-// "target": "ESNext",
-// "types": ["vite/client"],
-import.meta.env.DEV && console.log('dev')
 
 </script>
 
