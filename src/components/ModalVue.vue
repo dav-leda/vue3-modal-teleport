@@ -60,7 +60,7 @@ article {
   background-color: snow;
   border-radius: 5px;
   box-shadow: 0 8px 8px rgba(0, 0, 0, 0.4);
-  transition: all 0.5s ease;
+
 }
 
 footer {
