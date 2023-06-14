@@ -3,7 +3,7 @@
   <teleport to="body">
     <transition>
       
-      <dialog v-if="showModal" @click="closeModal">
+      <dialog v-if="showModal" @click.self="closeModal">
         
         <article>
 

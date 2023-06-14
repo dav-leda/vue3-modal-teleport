@@ -64,6 +64,7 @@ button {
   color: snow;
   border-radius: 5px;
   border: none;
+  cursor: pointer;
 }
 
 img {
