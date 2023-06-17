@@ -8,7 +8,7 @@
       @click="showModal = true"
     >Abrir Modal</button>
 
-    <ModalVue
+    <ModalWindow
       :showModal="showModal" 
       @close-modal="showModal = false"
     >
@@ -30,14 +30,14 @@
         >Cerrar</button>
       </template>
 
-    </ModalVue>
+    </ModalWindow>
 
   </main>
 </template>
 
 <script setup lang="ts">
 
-import ModalVue from './components/ModalVue.vue'
+import ModalWindow from './components/ModalWindow.vue'
 
 import { ref } from 'vue'
 
